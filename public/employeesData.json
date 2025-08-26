@@ -1,0 +1,171 @@
+{
+    "company": [
+        {
+            "id": 1,
+            "manager": "Alice Johnson",
+            "position": "Software Engineer",
+            "department": "Development",
+            "teamProductivity": "85%",
+            "teamWorkquality": "90%",
+            "teamCompliancedeadlines": "95%",
+            "teamsdevelopment": "80%",
+            "teamMembers": [
+                {
+                    "name": "John Doe",
+                    "role": "Frontend Developer",
+                    "productivity": "85%",
+                    "workQuality": "90%",
+                    "complianceDeadlines": "95%",
+                    "development": "80%"
+                },
+                {
+                    "name": "Jane Smith",
+                    "role": "Backend Developer",
+                    "productivity": "85%",
+                    "workQuality": "90%",
+                    "complianceDeadlines": "95%",
+                    "development": "80%"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "manager": "Bob Smith",
+            "position": "Project Manager",
+            "department": "Management",
+            "teamProductivity": "85%",
+            "teamWorkquality": "90%",
+            "teamCompliancedeadlines": "95%",
+            "teamsdevelopment": "80%",
+            "teamMembers": [
+                {
+                    "name": "Emily Davis",
+                    "role": "Scrum Master",
+                    "productivity": "85%",
+                    "workQuality": "90%",
+                    "complianceDeadlines": "95%",
+                    "development": "80%"
+                },
+                {
+                    "name": "Michael Brown",
+                    "role": "Business Analyst",
+                    "productivity": "85%",
+                    "workQuality": "90%",
+                    "complianceDeadlines": "95%",
+                    "development": "80%"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "manager": "Charlie Brown",
+            "position": "UX Designer",
+            "department": "Design",
+            "teamProductivity": "85%",
+            "teamWorkquality": "90%",
+            "teamCompliancedeadlines": "95%",
+            "teamsdevelopment": "80%",
+            "teamMembers": [
+                {
+                    "name": "Sarah Wilson",
+                    "role": "UI Designer",
+                    "productivity": "85%",
+                    "workQuality": "90%",
+                    "complianceDeadlines": "95%",
+                    "development": "80%"
+                },
+                {
+                    "name": "David Lee",
+                    "role": "Graphic Designer",
+                    "productivity": "85%",
+                    "workQuality": "90%",
+                    "complianceDeadlines": "95%",
+                    "development": "80%"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "manager": "Diana Prince",
+            "position": "Data Scientist",
+            "department": "Analytics",
+            "teamProductivity": "85%",
+            "teamWorkquality": "90%",
+            "teamCompliancedeadlines": "95%",
+            "teamsdevelopment": "80%",
+            "teamMembers": [
+                {
+                    "name": "Chris Martin",
+                    "role": "Data Analyst",
+                    "productivity": "85%",
+                    "workQuality": "90%",
+                    "complianceDeadlines": "95%",
+                    "development": "80%"
+                },
+                {
+                    "name": "Anna Garcia",
+                    "role": "Machine Learning Engineer",
+                    "productivity": "85%",
+                    "workQuality": "90%",
+                    "complianceDeadlines": "95%",
+                    "development": "80%"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "manager": "Ethan Hunt",
+            "position": "Marketing",
+            "department": "Marketing",
+            "teamProductivity": "85%",
+            "teamWorkquality": "90%",
+            "teamCompliancedeadlines": "95%",
+            "teamsdevelopment": "80%",
+            "teamMembers": [
+                {
+                    "name": "Olivia Taylor",
+                    "role": "Content Strategist",
+                    "productivity": "85%",
+                    "workQuality": "90%",
+                    "complianceDeadlines": "95%",
+                    "development": "80%"
+                },
+                {
+                    "name": "Liam Anderson",
+                    "role": "SEO Specialist",
+                    "productivity": "85%",
+                    "workQuality": "90%",
+                    "complianceDeadlines": "95%",
+                    "development": "80%"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "manager": "Michael Scott",
+            "department": "Human Resources",
+            "teamProductivity": "85%",
+            "teamWorkquality": "90%",
+            "teamCompliancedeadlines": "95%",
+            "teamsdevelopment": "80%",
+            "teamMembers": [
+                {
+                    "name": "Sophia Martinez",
+                    "role": "Recruiter",
+                    "productivity": "85%",
+                    "workQuality": "90%",
+                    "complianceDeadlines": "95%",
+                    "development": "80%"
+                },
+                {
+                    "name": "James Wilson",
+                    "role": "HR Coordinator",
+                    "productivity": "85%",
+                    "workQuality": "90%",
+                    "complianceDeadlines": "95%",
+                    "development": "80%"
+                }
+            ]
+        }
+    ]
+}

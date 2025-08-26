@@ -1,7 +1,9 @@
-export default function Home() {
+import React from 'react'
+
+const page = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between px-8">
-      dashboard
-    </div>
-  );
+    <div>page</div>
+  )
 }
+
+export default page

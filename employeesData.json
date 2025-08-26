@@ -1,0 +1,63 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "manager": "Alice Johnson",
+            "position": "Software Engineer",
+            "department": "Development",
+            "productivity": "85%",
+            "workquality": "90%",
+            "compliancedeadlines": "95%",
+            "selfdevelopment": "80%"
+        },
+        {
+            "id": 2,
+            "manager": "Bob Smith",
+            "position": "Project Manager",
+            "department": "Management",
+            "productivity": "85%",
+            "workquality": "90%",
+            "compliancedeadlines": "95%",
+            "selfdevelopment": "80%"
+        },
+        {
+            "id": 3,
+            "manager": "Charlie Brown",
+            "position": "UX Designer",
+            "department": "Design",
+            "productivity": "85%",
+            "workquality": "90%",
+            "compliancedeadlines": "95%",
+            "selfdevelopment": "80%"
+        },
+        {
+            "id": 4,
+            "manager": "Diana Prince",
+            "position": "Data Scientist",
+            "department": "Analytics",
+            "productivity": "85%",
+            "workquality": "90%",
+            "compliancedeadlines": "95%",
+            "selfdevelopment": "80%"
+        },
+        {
+            "id": 5,
+            "manager": "Ethan Hunt",
+            "position": "Marketing",
+            "department": "Marketing",
+            "productivity": "85%",
+            "workquality": "90%",
+            "compliancedeadlines": "95%",
+            "selfdevelopment": "80%"
+        },
+        {
+            "id": 6,
+            "manager": "HR Specialist",
+            "department": "Human Resources",
+            "productivity": "85%",
+            "workquality": "90%",
+            "compliancedeadlines": "95%",
+            "selfdevelopment": "80%"
+        }
+    ]
+}

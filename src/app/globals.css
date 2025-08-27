@@ -1,2 +1,17 @@
 @import "tailwindcss";
 
+.violet {
+    color: #edd5e7;
+}
+
+.purple {
+    color: #ae1580;
+}
+
+.dark-violet {
+    color: #480935;
+}
+
+.black {
+    color: #181d1d;
+}

@@ -1,233 +1,92 @@
 {
-    "company": [
-        {
-            "id": 1,
-            "manager": "Alice Johnson",
-            "position": "Software Engineer",
-            "department": "Development",
-            "teamProductivity": "85%",
-            "teamWorkquality": "90%",
-            "teamCompliancedeadlines": "95%",
-            "teamsdevelopment": "80%",
-            "teamMembers": [
-                {
-                    "name": "John Doe",
-                    "role": "Frontend Developer",
-                    "productivity": "85%",
-                    "workQuality": "90%",
-                    "complianceDeadlines": "95%",
-                    "development": "80%"
-                },
-                {
-                    "name": "Jane Smith",
-                    "role": "Backend Developer",
-                    "productivity": "85%",
-                    "workQuality": "90%",
-                    "complianceDeadlines": "95%",
-                    "development": "80%"
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "manager": "Bob Smith",
-            "position": "Project Manager",
-            "department": "Management",
-            "teamProductivity": "85%",
-            "teamWorkquality": "6%",
-            "teamCompliancedeadlines": "95%",
-            "teamsdevelopment": "80%",
-            "teamMembers": [
-                {
-                    "name": "Emily Davis",
-                    "role": "Scrum Master",
-                    "productivity": "85%",
-                    "workQuality": "90%",
-                    "complianceDeadlines": "95%",
-                    "development": "80%"
-                },
-                {
-                    "name": "Michael Brown",
-                    "role": "Business Analyst",
-                    "productivity": "85%",
-                    "workQuality": "90%",
-                    "complianceDeadlines": "95%",
-                    "development": "80%"
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "manager": "Charlie Brown",
-            "position": "UX Designer",
-            "department": "Design",
-            "teamProductivity": "85%",
-            "teamWorkquality": "10%",
-            "teamCompliancedeadlines": "95%",
-            "teamsdevelopment": "80%",
-            "teamMembers": [
-                {
-                    "name": "Sarah Wilson",
-                    "role": "UI Designer",
-                    "productivity": "85%",
-                    "workQuality": "90%",
-                    "complianceDeadlines": "95%",
-                    "development": "80%"
-                },
-                {
-                    "name": "David Lee",
-                    "role": "Graphic Designer",
-                    "productivity": "85%",
-                    "workQuality": "90%",
-                    "complianceDeadlines": "95%",
-                    "development": "80%"
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "manager": "Diana Prince",
-            "position": "Data Scientist",
-            "department": "Analytics",
-            "teamProductivity": "85%",
-            "teamWorkquality": "25%",
-            "teamCompliancedeadlines": "95%",
-            "teamsdevelopment": "80%",
-            "teamMembers": [
-                {
-                    "name": "Chris Martin",
-                    "role": "Data Analyst",
-                    "productivity": "85%",
-                    "workQuality": "90%",
-                    "complianceDeadlines": "95%",
-                    "development": "80%"
-                },
-                {
-                    "name": "Anna Garcia",
-                    "role": "Machine Learning Engineer",
-                    "productivity": "85%",
-                    "workQuality": "90%",
-                    "complianceDeadlines": "95%",
-                    "development": "80%"
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "manager": "Ethan Hunt",
-            "position": "Marketing",
-            "department": "Marketing",
-            "teamProductivity": "85%",
-            "teamWorkquality": "30%",
-            "teamCompliancedeadlines": "95%",
-            "teamsdevelopment": "80%",
-            "teamMembers": [
-                {
-                    "name": "Olivia Taylor",
-                    "role": "Content Strategist",
-                    "productivity": "85%",
-                    "workQuality": "90%",
-                    "complianceDeadlines": "95%",
-                    "development": "80%"
-                },
-                {
-                    "name": "Liam Anderson",
-                    "role": "SEO Specialist",
-                    "productivity": "85%",
-                    "workQuality": "90%",
-                    "complianceDeadlines": "95%",
-                    "development": "80%"
-                }
-            ]
-        },
-        {
-            "id": 6,
-            "manager": "Michael Scott",
-            "department": "Human Resources",
-            "teamProductivity": "85%",
-            "teamWorkquality": "4%",
-            "teamCompliancedeadlines": "95%",
-            "teamsdevelopment": "80%",
-            "teamMembers": [
-                {
-                    "name": "Sophia Martinez",
-                    "role": "Recruiter",
-                    "productivity": "85%",
-                    "workQuality": "90%",
-                    "complianceDeadlines": "95%",
-                    "development": "80%"
-                },
-                {
-                    "name": "James Wilson",
-                    "role": "HR Coordinator",
-                    "productivity": "85%",
-                    "workQuality": "90%",
-                    "complianceDeadlines": "95%",
-                    "development": "80%"
-                }
-            ]
-        }
-    ],
-    "performancePerYear": [
-        {
-            "id": 1,
-            "year": 2013,
-            "totalPerformance": "75%"
-        },
-        {
-            "id": 2,
-            "year": 2014,
-            "totalPerformance": "80%"
-        },
-        {
-            "id": 3,
-            "year": 2015,
-            "totalPerformance": "82%"
-        },
-        {
-            "id": 4,
-            "year": 2016,
-            "totalPerformance": "85%"
-        },
-        {
-            "id": 5,
-            "year": 2017,
-            "totalPerformance": "88%"
-        },
-        {
-            "id": 6,
-            "year": 2018,
-            "totalPerformance": "90%"
-        },
-        {
-            "id": 7,
-            "year": 2019,
-            "totalPerformance": "92%"
-        },
-        {
-            "id": 8,
-            "year": 2020,
-            "totalPerformance": "94%"
-        },
-        {
-            "id": 9,
-            "year": 2021,
-            "totalPerformance": "95%"
-        },
-        {
-            "id": 10,
-            "year": 2022,
-            "totalPerformance": "96%"
-        },
-        {
-            "id": 11,
-            "year": 2023,
-            "totalPerformance": "97%"
-        },
-        {
-            "id": 12,
-            "year": 2024,
-            "totalPerformance": "50%"
-        }
-    ]
+  "indicatorsData": {
+    "totalEmployees": 120,
+    "averagePerformance": 0.82,
+    "highPerformers": 35,
+    "lowPerformers": 15
+  },
+  "graphData": [
+    {
+      "month": "Enero",
+      "averagePerformance": 0.75
+    },
+    {
+      "month": "Febrero",
+      "averagePerformance": 0.78
+    },
+    {
+      "month": "Marzo",
+      "averagePerformance": 0.8
+    },
+    {
+      "month": "Abril",
+      "averagePerformance": 0.82
+    },
+    {
+      "month": "Mayo",
+      "averagePerformance": 0.79
+    },
+    {
+      "month": "Junio",
+      "averagePerformance": 0.85
+    }
+  ],
+  "tableData": [
+    {
+      "id": "E001",
+      "name": "Ana López",
+      "department": "Ventas",
+      "performance": 0.9,
+      "status": "High"
+    },
+    {
+      "id": "E002",
+      "name": "Luis Pérez",
+      "department": "Marketing",
+      "performance": 0.76,
+      "status": "Medium"
+    },
+    {
+      "id": "E003",
+      "name": "María Díaz",
+      "department": "Operaciones",
+      "performance": 0.65,
+      "status": "Low"
+    },
+    {
+      "id": "E004",
+      "name": "Pedro Gómez",
+      "department": "Ventas",
+      "performance": 0.88,
+      "status": "High"
+    },
+    {
+      "id": "E005",
+      "name": "Sofía Herrera",
+      "department": "Recursos Humanos",
+      "performance": 0.82,
+      "status": "Medium"
+    },
+    {
+      "id": "E006",
+      "name": "Carlos Méndez",
+      "department": "Finanzas",
+      "performance": 0.7,
+      "status": "Medium"
+    },
+    {
+      "id": "E007",
+      "name": "Laura Torres",
+      "department": "Operaciones",
+      "performance": 0.95,
+      "status": "High"
+    },
+    {
+      "id": "E008",
+      "name": "Andrés Castillo",
+      "department": "Marketing",
+      "performance": 0.6,
+      "status": "Low"
+    }
+  ]
 }

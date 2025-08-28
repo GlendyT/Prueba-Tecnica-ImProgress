@@ -1,19 +1,25 @@
 "use client";
-
-import BarYears from "@/components/BarYears";
-import Circle from "@/components/Circle";
-import PerformancePerDept from "@/components/PerformancePerDept";
+import Circle from "@/components/TopSection/CircleBar";
+import PerformancePerDept from "@/components/TopSection/PerformancePerDept";
+import TableInfo from "@/components/BotomSection/TableInfo";
+import FilteredDashboard from "@/components/BotomSection/FilteredDashboard";
+import BarMonths from "@/components/TopSection/BarMonths";
 
 const Dashboard = () => {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-between p-4">
-      <h1 className="text-3xl font-bold">
-        Employee Performance Dashboard 2024
+    <section className="flex min-h-screen flex-col gap-4 items-center justify-between px-14 py-2 max-sm:px-4">
+      <h1 className="text-2xl font-bold text-center">
+        Employee Performance Dashboard
       </h1>
-      <div className="flex flex-row w-full items-end justify-center gap-10 h-96 ">
+      <div className="flex flex-row max-sm:flex-col w-full items-start justify-center gap-6 ">
         <Circle />
-        <BarYears />
-        <PerformancePerDept />{" "}
+        <BarMonths />
+        <PerformancePerDept />
+      </div>
+
+      <div className="flex flex-row max-sm:flex-col w-full items-start justify-center gap-6">
+        <TableInfo />
+        <FilteredDashboard />
       </div>
     </section>
   );

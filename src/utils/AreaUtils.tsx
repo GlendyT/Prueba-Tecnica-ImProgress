@@ -7,7 +7,7 @@ const createAreaOptions = ({
   yAxisFormatter,
   strokeColor = "#181d1d",
   markerColor = "#181d1d",
-  gradientColors = ["#181d1d", "#480935", "#ae1580", "#edd5e7"],
+  gradientColors = ["#060606", "#480935", "#AE1580", "#edd5e7"],
 }: CreateAreaOptions) => ({
   chart: { type: "area" as const, toolbar: { show: false } },
   xaxis: { categories },

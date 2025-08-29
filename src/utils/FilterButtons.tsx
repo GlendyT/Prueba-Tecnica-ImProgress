@@ -7,12 +7,12 @@ const FilterButtons = ({
   label,
 }: FilterButtonsProps) => {
   return (
-    <div className="flex flex-col w-32 text-sm max-lg:text-xs">
+    <div className="flex flex-col w-36 text-sm max-lg:text-xs cursor-pointer ">
       <select
         id="department-filter"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="px-2 py-2 border rounded cursor-pointer bg-[#edd5e7]"
+        className="px-2 py-1.5 border rounded cursor-pointer bg-[#edd5e7]"
       >
         <option value="" className=" cursor-pointer">
           {label}

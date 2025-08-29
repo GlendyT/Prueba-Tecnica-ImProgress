@@ -24,5 +24,5 @@ export const donutLabels: string[] = [
   "Rendimiento Bajo",
 ];
 
-export const paleteColors: string[] = ["#ae1580", "#480935", "#181d1d"];
+export const paleteColors: string[] = ["#AE1580", "#480935", "#181d1d"];
 

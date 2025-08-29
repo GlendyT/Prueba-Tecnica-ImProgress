@@ -6,6 +6,8 @@ import {
   TableCell,
   IconButton,
   TableBody,
+  useTheme,
+  useMediaQuery,
 } from "@mui/material";
 import React from "react";
 import RemoveIcon from "@mui/icons-material/Remove";
@@ -19,7 +21,14 @@ const TableUtil = <T extends { id: string | number }>({
   onClick,
   expand,
 }: TableUtilProps<T>) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   const displayData = expand ? data : data.slice(0, 5);
+
+  // Responsive font sizes
+  const headerFontSize = isMobile ? "8px" : "10px";
+  const cellFontSize = isMobile ? "10px" : "12px";
 
   return (
     <Paper style={{ border: "2px solid black" }}>
@@ -35,7 +44,7 @@ const TableUtil = <T extends { id: string | number }>({
                 key={String(column.accessorKey)}
                 style={{
                   color: "white",
-                  fontSize: "10px",
+                  fontSize: headerFontSize,
                   fontFamily: konkhmer.style.fontFamily,
                 }}
                 align={column.align || "left"}
@@ -87,7 +96,7 @@ const TableUtil = <T extends { id: string | number }>({
                       height: 50,
                       width: 300,
                       fontFamily: konkhmer.style.fontFamily,
-                      fontSize: "12px",
+                      fontSize: cellFontSize,
                     }}
                   >
                     {column.cell

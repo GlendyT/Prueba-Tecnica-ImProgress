@@ -1,26 +1,27 @@
 "use client";
-import Circle from "@/components/TopSection/CircleBar";
-import PerformancePerDept from "@/components/TopSection/PerformancePerDept";
+
 import TableInfo from "@/components/BotomSection/TableInfo";
 import FilteredDashboard from "@/components/BotomSection/FilteredDashboard";
 import BarMonths from "@/components/TopSection/BarMonths";
 import { konkhmer } from "@/utils/helpers";
+import BarDepartment from "@/components/TopSection/BarDepartment";
+import TopDonutEmployee from "@/components/TopSection/TopDonutEmployee";
 
 const Dashboard = () => {
   return (
     <section
-      className={`flex min-h-screen flex-col gap-0 items-center justify-between px-14 py-2 max-sm:px-4 ${konkhmer.className}`}
+      className={`flex min-h-screen flex-col gap-2 items-center justify-between px-14 py-1 max-sm:px-4 ${konkhmer.className}`}
     >
-      <h1 className="text-2xl font-bold text-center">
+      <h1 className="text-xl font-bold text-center">
         Employee Performance Dashboard
       </h1>
-      <div className="flex flex-row max-lg:flex-wrap w-full items-start justify-center gap-6 ">
-        <Circle />
+      <div className="flex flex-row max-lg:flex-wrap w-full items-start justify-center gap-4 ">
+        <TopDonutEmployee />
         <BarMonths />
-        <PerformancePerDept />
+        <BarDepartment />
       </div>
 
-      <div className="flex flex-row max-lg:flex-wrap w-full items-start justify-center gap-6">
+      <div className="flex flex-row max-lg:flex-wrap w-full items-start justify-center gap-4">
         <TableInfo />
         <FilteredDashboard />
       </div>

@@ -13,7 +13,7 @@ const DonutChart = () => {
         series={donutChartData.series}
         type="donut"
         width={250}
-        height={195}
+        height={200}
       />
       <h1 className={`${textStyles}`}>Rendimiento Total por Departamento</h1>
     </div>

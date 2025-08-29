@@ -12,7 +12,7 @@ const FilterButtons = ({
         id="department-filter"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="px-2 py-1.5 border rounded cursor-pointer bg-[#edd5e7]"
+        className="px-2 py-1.5 shadow-2xl rounded cursor-pointer bg-[#edd5e7]"
       >
         <option value="" className=" cursor-pointer">
           {label}

@@ -9,16 +9,25 @@ const BarMonths = () => {
   const { barOptions, barSeries, areaOptions, isMobile, isTablet, isDesktop } =
     usePerformance();
 
+  const isLoading = !barSeries || barSeries.length === 0;
+  const chartHeight = isMobile ? 250 : isTablet ? 400 : isDesktop ? 256 : 300;
+
   return (
-    <div className={`${cardStyles}`}>
-      <ReactApexChart
-        options={isAreaView ? areaOptions : barOptions}
-        series={isAreaView ? [barSeries[0]] : barSeries}
-        type={isAreaView ? "area" : "bar"}
-        width={isMobile ? 350 : isTablet ? 500 : isDesktop ? 400 : 700}
-        height={isMobile ? 250 : isTablet ? 200 : isDesktop ? 229 : 300}
-      />
-      <div className="flex w-full flex-row gap-2 justify-between items-center px-4 ">
+    <div className={`${cardStyles}`} style={{ minHeight: chartHeight + 80 }}>
+      {isLoading ? (
+        <div className="flex items-center justify-center" style={{ height: chartHeight }}>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
+        </div>
+      ) : (
+        <ReactApexChart
+          options={isAreaView ? areaOptions : barOptions}
+          series={isAreaView ? [barSeries[0]] : barSeries}
+          type={isAreaView ? "area" : "bar"}
+          width={isMobile ? 350 : isTablet ? 600 : isDesktop ? 300 : 700}
+          height={chartHeight}
+        />
+      )}
+      <div className="flex w-full flex-row justify-between items-center px-4 ">
         <h2 className={`${textStyles}`}>Rendimiento por Mes</h2>
         <button
           onClick={() => setIsAreaView(!isAreaView)}

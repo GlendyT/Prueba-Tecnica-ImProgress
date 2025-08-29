@@ -4,12 +4,12 @@ import { ReactApexChart } from "@/utils/ApexChart";
 
 
 const AreaChart = () => {
-  const { options3, series3 } = usePerformance();
+  const { areaOptions, barSeries } = usePerformance();
 
   return (
     <ReactApexChart
-      options={options3}
-      series={series3}
+      options={areaOptions}
+      series={barSeries}
       type="area"
       height={250}
     />

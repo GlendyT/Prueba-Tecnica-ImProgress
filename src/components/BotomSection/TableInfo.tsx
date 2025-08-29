@@ -1,12 +1,13 @@
 import TableUtil from "@/utils/TableUtil";
 import usePerformance from "@/hooks/usePerformance";
+import { cardBottomStyles } from "@/utils/helpers";
 
 const TableInfo: React.FC = () => {
   const { table, columns, expand, setExpand } = usePerformance();
 
   return (
-    <div className=" w-1/2 max-sm:w-full ">
-      {/* Tabla 1: Empleado | Departamento | Rendimiento | Estado*/}
+    <div className={`${cardBottomStyles}`}>
+      {/* Tabla : Empleado | Departamento | Rendimiento | Estado*/}
       <TableUtil
         data={table}
         columns={columns}

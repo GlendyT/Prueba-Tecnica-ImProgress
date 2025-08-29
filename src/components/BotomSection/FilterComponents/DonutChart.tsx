@@ -1,21 +1,21 @@
 "use client";
 import usePerformance from "@/hooks/usePerformance";
 import { ReactApexChart } from "@/utils/ApexChart";
-import { cardStyles, textStyles } from "@/utils/CardStyles";
+import { cardStyles, textStyles } from "@/utils/helpers";
 
 const DonutChart = () => {
-  const { showData, options } = usePerformance();
+  const {  options, donutChartData } = usePerformance();
 
   return (
-    <div className={`${cardStyles} w-full` }>
+    <div className={`${cardStyles} w-full`}>
       <ReactApexChart
         options={options}
-        series={showData.series}
+        series={donutChartData.series}
         type="donut"
         width={250}
         height={195}
       />
-      <h1 className={`${textStyles}`}>Rendimiento Total</h1>
+      <h1 className={`${textStyles}`}>Rendimiento Total por Departamento</h1>
     </div>
   );
 };

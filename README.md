@@ -1,6 +1,6 @@
 # Improgress
 
-A Next.js application for employee performance tracking and visualization with interactive charts and data management.
+A Next.js dashboard for employee performance tracking and visualization with interactive charts and data management.
 
 ## Prerequisites
 
@@ -43,21 +43,29 @@ npm run build
 npm run start
 ```
 
-### Linting
-```bash
-npm run lint
-```
-
 ## Tech Stack
 
-- **Framework:** Next.js 15.5
-- **UI Library:** Material-UI (MUI)
-- **Charts:** ApexCharts
-- **Styling:** Tailwind CSS
-- **Language:** TypeScript
+| CATEGORY | TECHNOLOGY | VERSION | PURPOSE|
+|----------|------------|---------|--------|
+| **Framework:** | Next.js | 15.5 | React framework with SSR capabilities|
+| **Runtime**	| React	 |19.1.0	|UI library for component-based architecture|
+| **Language**	|TypeScript | 	|Type-safe JavaScript development|
+| **Styling**|	Tailwind CSS|	4.x	|Utility-first CSS framework|
+| **UI Library:** |Material-UI (MUI)| 7.3.1| Pre-built React components|
+| **Charts**	|ApexCharts	|5.3.4	|Interactive data visualization|
+| **Build Tool**	|Turbopack	|Latest|	Next.js optimized bundler|
+   
 
+## SOLID PRINCIPLES USED
+
+- **Single Responsibility Principle (SRP):** Using a Provider that manages all performance-related state and data transformation for the dashboard. It centralizes data fetching, filtering, chart configuration, and state management in one cohesive unit.
+- **Dependency Inversion Principle (DIP):** The architecture demonstrates DIP through its use of utility functions for chart creation. The provider depends on the abstraction of createAreaOptions, createBarOptions, and createDonutOptions rather than concrete implementations, allowing for flexible chart configuration. It also uses dependency injection by accepting children as props and wrapping them with a context.
+- **Open/Closed Principle (OCP):** The chart configuration system follows OCP by using utility functions that can be extended with new options without modifying existing code. Each chart type uses configurable options objects, making the system open for extension but closed for modification.
+- **Interface Segregation Principle (ISP):** The context provider exposes a comprehensive but focused interface through the PerformanceContext. Components can access only the specific data and functions they need through the usePerformance hook, rather than being forced to depend on unused functionality.
+- The architecture primarily uses composition and functional patterns rather than class-based inheritance.
+
+  
 ## Project Structure
-
 ```
 src/
 ├── app/           # Next.js app directory

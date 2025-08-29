@@ -9,9 +9,9 @@ import {
   PerformanceTypes,
   TableData,
 } from "@/types/employee";
-import createAreaOptions from "@/utils/AreaUtils";
-import createBarOptions from "@/utils/BarsUtils";
-import createDonutOptions from "@/utils/DonutUtil";
+import createAreaOptions from "@/components/AreaUtils";
+import createBarOptions from "@/components/BarsUtils";
+import createDonutOptions from "@/components/DonutUtil";
 import { donutLabels, paleteColors } from "@/utils/helpers";
 import { useMediaQuery } from "@mui/material";
 import { createContext, useEffect, useMemo, useState } from "react";

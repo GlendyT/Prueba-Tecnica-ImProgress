@@ -13,7 +13,7 @@ import React from "react";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 import { TableUtilProps } from "@/types/employee";
-import { konkhmer } from "./helpers";
+import { konkhmer } from "../utils/helpers";
 
 const TableUtil = <T extends { id: string | number }>({
   data,

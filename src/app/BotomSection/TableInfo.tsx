@@ -1,4 +1,4 @@
-import TableUtil from "@/utils/TableUtil";
+import TableUtil from "@/components/TableUtil";
 import usePerformance from "@/hooks/usePerformance";
 import { cardBottomStyles } from "@/utils/helpers";
 

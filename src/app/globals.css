@@ -15,3 +15,8 @@
 .black {
     color: #181d1d;
 }
+
+* {
+  scrollbar-width: thin;
+}
+

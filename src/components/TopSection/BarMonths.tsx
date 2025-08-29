@@ -2,19 +2,20 @@
 import { useState } from "react";
 import usePerformance from "@/hooks/usePerformance";
 import { ReactApexChart } from "@/utils/ApexChart";
-import { cardStyles, textStyles } from "@/utils/CardStyles";
+import { cardStyles, textStyles } from "@/utils/helpers";
 
 const BarMonths = () => {
   const [isAreaView, setIsAreaView] = useState(false);
-  const { barOptions, barSeries, options3, series3 } = usePerformance();
+  const { barOptions, barSeries, areaOptions, isMobile, isTablet, isDesktop } =
+    usePerformance();
 
   return (
     <div className={`${cardStyles}`}>
       <ReactApexChart
-        options={isAreaView ? options3 : barOptions}
-        series={isAreaView ? series3 : barSeries}
+        options={isAreaView ? areaOptions : barOptions}
+        series={isAreaView ? [barSeries[0]] : barSeries}
         type={isAreaView ? "area" : "bar"}
-        width={420}
+        width={isMobile ? 350 : isTablet ? 500 : isDesktop ? 400 : 700}
         height={235}
       />
       <div className="flex w-full flex-row gap-2 justify-between items-center px-4 ">

@@ -1,7 +1,7 @@
 "use client";
 import usePerformance from "@/hooks/usePerformance";
 import { ReactApexChart } from "@/utils/ApexChart";
-import { cardStyles, textStyles } from "@/utils/CardStyles";
+import { cardStyles, textStyles } from "@/utils/helpers";
 
 const Circle = () => {
   const { donutOptions, donutSeries } = usePerformance();
@@ -14,7 +14,7 @@ const Circle = () => {
         width={350}
         height={250}
       />
-      <h1 className={`${textStyles}`}>Rendimiento de Empleados</h1>
+      <h1 className={`${textStyles}`}>Rendimiento Total de la Empresa</h1>
     </div>
   );
 };

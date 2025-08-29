@@ -42,13 +42,10 @@ const createBarOptions = ({
     axisBorder: { show: false },
     axisTicks: { show: false },
   },
-  ...(yAxisMax && {
-    yaxis: {
-      min: yAxisMin,
-      max: yAxisMax,
-      ...(yAxisFormatter && { labels: { formatter: yAxisFormatter } }),
-    },
-  }),
+  yaxis: {
+    ...(yAxisMax && { min: yAxisMin, max: yAxisMax }),
+    ...(yAxisFormatter && { labels: { formatter: yAxisFormatter } }),
+  },
   grid: {
     xaxis: { lines: { show: true } },
     yaxis: { lines: { show: false } },

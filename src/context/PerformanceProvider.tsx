@@ -174,10 +174,12 @@ const PerformanceProvider = ({ children }: PerformanceProviderProps) => {
   ];
 
   const chartOptions = createBarOptions({
-    categories: departmentPerformance.map((d) => d.department),
+    categories: departmentPerformance.map((d) => 
+      d.department.length > 8 ? d.department.replace(' ', '\n') : d.department
+    ),
     colors: [
       ({ dataPointIndex }: { dataPointIndex: number }) => {
-        const barColors = ["#ae1580", "#480935"];
+        const barColors = ["#AE1580", "#480935"];
         return barColors[dataPointIndex % barColors.length];
       },
       "#edd5e7",
@@ -282,7 +284,7 @@ const PerformanceProvider = ({ children }: PerformanceProviderProps) => {
     categories: barChartData.labels,
     colors: [
       ({ dataPointIndex }: { dataPointIndex: number }) => {
-        const barColors = ["#ae1580", "#480935"];
+        const barColors = ["#AE1580", "#480935"];
         return barColors[dataPointIndex % 2];
       },
       "#edd5e7",

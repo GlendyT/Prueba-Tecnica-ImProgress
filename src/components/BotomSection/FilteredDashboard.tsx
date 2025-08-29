@@ -11,8 +11,8 @@ const FilteredDashboard = () => {
 
   return (
     <div className={`${cardBottomStyles}`}>
-      <div className="flex flex-wrap max-lg:justify-center  gap-4 mb-2 px-2 py-2 items-center justify-between bg-gray-100 rounded-lg w-full border-2 border-black  ">
-        <h1 className={`${textStyles}`}>Filtrar desempeño por:</h1>
+      <div className="flex flex-wrap max-lg:justify-center  gap-2 mb-2 px-2 py-2 items-center justify-between bg-gray-100 rounded-lg w-full border-2 border-black  ">
+        <h1 className={`${textStyles}`}>Filtrar rendimiento por:</h1>
         <div className="flex flex-wrap gap-2 w-auto justify-end ">
           {filtroValues.map(({ label, options, value }) => (
             <FilterButtons
@@ -26,7 +26,7 @@ const FilteredDashboard = () => {
         </div>
       </div>
 
-      <div className="flex flex-row max-sm:flex-col gap-2 w-full">
+      <div className="flex flex-row max-lg:flex-col gap-4 w-full">
         <DonutChart />
         <HorizontalBarChart />
       </div>

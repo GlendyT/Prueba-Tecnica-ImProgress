@@ -18,7 +18,7 @@ const HorizontalBarChart = () => {
         options={horizontalBarOptions}
         series={horizontalBarSeries}
         type="bar"
-        height={180}
+        height={isMobile ? 350 : isTablet ? 500 : isDesktop ? 190 : 500}
         width={isMobile ? 350 : isTablet ? 400 : isDesktop ? 300 : 700}
       />
 

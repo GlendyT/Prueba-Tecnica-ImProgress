@@ -4,7 +4,7 @@ import usePerformance from "@/hooks/usePerformance";
 import { ReactApexChart } from "@/utils/ApexChart";
 import { cardStyles, textStyles } from "@/utils/helpers";
 
-const PerformancePerDept = () => {
+const BarDepartment = () => {
   const {
     departmentPerformance,
     chartOptions,
@@ -23,11 +23,11 @@ const PerformancePerDept = () => {
         series={chartSeries}
         type="bar"
         width={isMobile ? 350 : isTablet ? 500 : isDesktop ? 400 : 700}
-        height={240}
+        height={isMobile ? 300 : isTablet ? 500 : isDesktop ? 235 : 500}
       />
       <h2 className={`${textStyles}`}>Rendimiento por departamento</h2>
     </div>
   );
 };
 
-export default PerformancePerDept;
+export default BarDepartment;

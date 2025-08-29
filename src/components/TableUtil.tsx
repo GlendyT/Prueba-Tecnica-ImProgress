@@ -20,18 +20,21 @@ const TableUtil = <T extends { id: string | number }>({
   columns,
   onClick,
   expand,
-}: TableUtilProps<T>) => {
+  isLoading = false,
+}: TableUtilProps<T> & { isLoading?: boolean }) => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const displayData = expand ? data : data.slice(0, 5);
 
-  // Responsive font sizes
+  // Responsive sizes
   const headerFontSize = isMobile ? "8px" : "10px";
-  const cellFontSize = isMobile ? "10px" : "12px";
+  const cellFontSize = isMobile ? "6px" : "10px";
+  const iconSize = isMobile ? "16px" : "20px";
+  const iconPadding = isMobile ? 4 : 8;
 
   return (
-    <Paper style={{ border: "2px solid black" }}>
+    <Paper style={{ boxShadow: "0 8px 12px rgba(0, 0, 0, 0.1)" }}>
       <Table sx={{ minWidth: 200 }} aria-label="reusable table">
         <TableHead
           style={{
@@ -53,22 +56,30 @@ const TableUtil = <T extends { id: string | number }>({
               </TableCell>
             ))}
             <TableCell
-              style={{ color: "white", padding: 0, margin: 0 }}
-              align="right"
+              style={{ 
+                color: "white", 
+                paddingTop: 4, 
+                paddingBottom: 4, 
+                margin: 0,
+                width: isMobile ? "40px" : "50px",
+                minWidth: isMobile ? "40px" : "50px"
+              }}
+              align="center"
             >
               <IconButton
+                size={isMobile ? "small" : "medium"}
                 style={{
                   color: "white",
-                  fontSize: "0px",
-                  paddingLeft: 10,
-                  paddingRight: 10,
-                  paddingTop: 0,
-                  paddingBottom: 0,
+                  padding: iconPadding,
                   margin: 0,
+                  minWidth: "auto",
                 }}
                 onClick={onClick}
               >
-                {expand ? <RemoveIcon /> : <AddIcon />}
+                {expand ? 
+                  <RemoveIcon style={{ fontSize: iconSize }} /> : 
+                  <AddIcon style={{ fontSize: iconSize }} />
+                }
               </IconButton>
             </TableCell>
           </TableRow>
@@ -78,35 +89,61 @@ const TableUtil = <T extends { id: string | number }>({
         style={{
           maxHeight: expand ? 248 : 263,
           overflowY: expand ? "auto" : "visible",
+          minHeight: 200,
         }}
       >
         <Table sx={{ minWidth: 200 }}>
           <TableBody>
-            {displayData.map((row) => (
-              <TableRow key={row.id}>
-                {columns.map((column) => (
-                  <TableCell
-                    key={String(column.accessorKey)}
-                    align={column.align || "left"}
-                    style={{
-                      paddingLeft: 10,
-                      paddingRight: 10,
-                      paddingTop: 0,
-                      paddingBottom: 0,
-                      height: 50,
-                      width: 300,
-                      fontFamily: konkhmer.style.fontFamily,
-                      fontSize: cellFontSize,
-                    }}
-                  >
-                    {column.cell
-                      ? column.cell(row)
-                      : String(row[column.accessorKey])}
-                  </TableCell>
-                ))}
-                <TableCell />
+            {isLoading ? (
+              <TableRow>
+                <TableCell
+                  colSpan={columns.length + 1}
+                  style={{ textAlign: "center", height: 200 }}
+                >
+                  <div className="flex items-center justify-center h-full">
+                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
+                  </div>
+                </TableCell>
               </TableRow>
-            ))}
+            ) : displayData.length === 0 ? (
+              <TableRow>
+                <TableCell
+                  colSpan={columns.length + 1}
+                  style={{ textAlign: "center", height: 200 }}
+                >
+                  <div className="flex items-center justify-center h-full text-gray-500">
+                    No hay datos disponibles
+                  </div>
+                </TableCell>
+              </TableRow>
+            ) : (
+              displayData.map((row) => (
+                <TableRow key={row.id}>
+                  {columns.map((column) => (
+                    <TableCell
+                      key={String(column.accessorKey)}
+                      align={column.align || "left"}
+                      style={{
+                        paddingLeft: isMobile ? 4 : 10,
+                        paddingRight: isMobile ? 4 : 10,
+                        paddingTop: 0,
+                        paddingBottom: 0,
+                        height: isMobile ? 40 : 52,
+                        maxWidth: isMobile ? "80px" : "300px",
+                        fontFamily: konkhmer.style.fontFamily,
+                        fontSize: cellFontSize,
+                        wordBreak: "break-word",
+                      }}
+                    >
+                      {column.cell
+                        ? column.cell(row)
+                        : String(row[column.accessorKey])}
+                    </TableCell>
+                  ))}
+                  <TableCell />
+                </TableRow>
+              ))
+            )}
           </TableBody>
         </Table>
       </div>

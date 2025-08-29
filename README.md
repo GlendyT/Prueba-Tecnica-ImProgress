@@ -43,6 +43,10 @@ npm run build
 npm run start
 ```
 
+## FIGMA FILE LINK
+
+[Figma](https://www.figma.com/design/FQ1BXP3OpwRYfNm1POp3qO/ImprogressTest?node-id=0-1&t=LWKANiutIKjGn8E8-1)
+
 ## Tech Stack
 
 | CATEGORY | TECHNOLOGY | VERSION | PURPOSE|
@@ -70,8 +74,8 @@ npm run start
 src/
 ├── app/
 │   ├── BotomSection/
-│   │   ├── FilterComponents/    # Filter-related components
-│   │   ├── FilteredDashboard.tsx # Filtered dashboard view
+│   │   ├── DonutChart.tsx      # Donut chart component
+│   │   ├── HorizontalBarChart.tsx # Horizontal bar chart component
 │   │   └── TableInfo.tsx        # Table information component
 │   ├── TopSection/
 │   │   ├── AreaMonth.tsx        # Monthly area chart
@@ -86,6 +90,7 @@ src/
 │   ├── BarsUtils.tsx            # Bar chart utilities
 │   ├── DonutUtil.tsx            # Donut chart utilities
 │   ├── FilterButtons.tsx        # Filter button components
+│   ├── FilterNav.tsx            # Filter Nav components
 │   └── TableUtil.tsx            # Table utilities
 ├── context/
 │   └── PerformanceProvider.tsx  # Performance data context

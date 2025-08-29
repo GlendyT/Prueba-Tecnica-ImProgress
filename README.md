@@ -68,10 +68,35 @@ npm run start
 ## Project Structure
 ```
 src/
-├── app/           # Next.js app directory
-├── components/    # Reusable components
-├── context/       # React context providers
-├── hooks/         # Custom hooks
-├── types/         # TypeScript type definitions
-└── utils/         # Utility functions and components
+├── app/
+│   ├── BotomSection/
+│   │   ├── FilterComponents/    # Filter-related components
+│   │   ├── FilteredDashboard.tsx # Filtered dashboard view
+│   │   └── TableInfo.tsx        # Table information component
+│   ├── TopSection/
+│   │   ├── AreaMonth.tsx        # Monthly area chart
+│   │   ├── BarDepartment.tsx    # Department bar chart
+│   │   ├── BarMonths.tsx        # Monthly bar chart
+│   │   └── TopDonutEmployee.tsx # Employee donut chart
+│   ├── globals.css              # Global styles
+│   ├── layout.tsx               # Root layout component
+│   └── page.tsx                 # Main dashboard page
+├── components/
+│   ├── AreaUtils.tsx            # Area chart utilities
+│   ├── BarsUtils.tsx            # Bar chart utilities
+│   ├── DonutUtil.tsx            # Donut chart utilities
+│   ├── FilterButtons.tsx        # Filter button components
+│   └── TableUtil.tsx            # Table utilities
+├── context/
+│   └── PerformanceProvider.tsx  # Performance data context
+├── hooks/
+│   └── usePerformance.tsx       # Performance data hook
+├── types/
+│   └── employee.ts              # Employee type definitions
+└── utils/
+    ├── ApexChart.tsx            # Chart wrapper component
+    └── helpers.tsx              # Helper functions
+
+public/
+└── employeesData.json           # Employee data source
 ```

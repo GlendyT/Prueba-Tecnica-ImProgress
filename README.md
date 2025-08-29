@@ -1,4 +1,4 @@
-# Prueba Técnica para ImProgress
+# Technical Test for ImProgress
 
 A Next.js dashboard for employee performance tracking and visualization with interactive charts and data management.
 

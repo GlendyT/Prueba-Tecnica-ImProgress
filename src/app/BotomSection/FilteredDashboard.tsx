@@ -3,7 +3,7 @@
 import { cardBottomStyles, textStyles } from "@/utils/helpers";
 import DonutChart from "./FilterComponents/DonutChart";
 import HorizontalBarChart from "./FilterComponents/HorizontalBarChart";
-import FilterButtons from "@/utils/FilterButtons";
+import FilterButtons from "@/components/FilterButtons";
 import usePerformance from "@/hooks/usePerformance";
 
 const FilteredDashboard = () => {

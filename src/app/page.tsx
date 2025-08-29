@@ -1,11 +1,11 @@
 "use client";
 
-import TableInfo from "@/components/BotomSection/TableInfo";
-import FilteredDashboard from "@/components/BotomSection/FilteredDashboard";
-import BarMonths from "@/components/TopSection/BarMonths";
 import { konkhmer } from "@/utils/helpers";
-import BarDepartment from "@/components/TopSection/BarDepartment";
-import TopDonutEmployee from "@/components/TopSection/TopDonutEmployee";
+import FilteredDashboard from "./BotomSection/FilteredDashboard";
+import TableInfo from "./BotomSection/TableInfo";
+import BarDepartment from "./TopSection/BarDepartment";
+import BarMonths from "./TopSection/BarMonths";
+import TopDonutEmployee from "./TopSection/TopDonutEmployee";
 
 const Dashboard = () => {
   return (
